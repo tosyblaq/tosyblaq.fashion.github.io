@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>fashion</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css?h=9db842b3dc3336737559eb4abc0f1b3d">
+    <link rel="stylesheet" href="assets/css/styles.min.css?h=c0f44a0aa56584e971c492e8212b4cb1">
+    <link rel="stylesheet" href="https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-md bg-light better-bootstrap-nav-left" style="background: rgb(255,255,255);">
+        <div class="container"><a class="navbar-brand" href="#"><img class="img-fluid" src="assets/img/logo.png?h=d3aaeedeb992f09719082092c5162a19" width="180px"></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav mr-auto">
+                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">Men&nbsp;</a>
+                        <div class="dropdown-menu"><a class="dropdown-item" href="#">Shirts</a>
+                            <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Pants</a>
+                            <div class="dropdown-divider"></div><a class="dropdown-item" href="#">T-shirts</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">Women</a>
+                        <div class="dropdown-menu"><a class="dropdown-item" href="product-lists.html">Kurti</a>
+                            <div class="dropdown-divider"></div><a class="dropdown-item" href="#">T-Shirts</a>
+                            <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Pants</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">Kids</a>
+                        <div class="dropdown-menu"><a class="dropdown-item" href="#">Shirts</a>
+                            <div class="dropdown-divider"></div><a class="dropdown-item" href="#">T-Shirts</a>
+                            <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Pants</a>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item text-center"></li>
+                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link text-center" data-toggle="dropdown" aria-expanded="false" href="#"><i class="fa fa-user-o"></i><br><strong>My Profile</strong></a>
+                        <div class="dropdown-menu"><a class="dropdown-item" href="#" data-toggle="modal" data-target="#log-in"><i class="fa fa-sign-in"></i>&nbsp;Log in</a><a class="dropdown-item" href="#" style="font-size: 16px;" data-toggle="modal" data-target="#create-account">Create Account</a></div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link text-center" href="#"><i class="fa fa-bookmark-o"></i><br><strong>Wishlist</strong></a></li>
+                    <li class="nav-item"><a class="nav-link text-center" href="#"><i class="icon ion-bag"></i><br><strong>Bag</strong></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="modal fade" role="dialog" tabindex="-1" id="log-in">
+        <div class="modal-dialog modal-sm modal-dialog-centered modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Log In</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="modal-body">
+                    <form action="#" method="post">
+                        <div class="form-group"><label><strong>Email:</strong></label><input class="form-control" type="email"></div>
+                        <div class="form-group"><label><strong>Password:</strong></label><input class="form-control" type="password"></div>
+                        <div class="form-group"><button class="btn btn-primary btn-block" type="submit"><i class="fas fa-sign-in-alt"></i>&nbsp;Log In</button></div>
+                        <hr style="background: #c934b9;">
+                        <p style="color: var(--gray);">Don't have an account?&nbsp;<span id="createAccountCursor" style="color: var(--blue);" data-dismiss="modal" data-toggle="modal" data-target="#create-account"><span style="text-decoration: underline;">Create account</span><br></span></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="create-account">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Create Account</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="modal-body">
+                    <form action="#" method="post">
+                        <div class="form-group"><label><strong>First Name:</strong></label><input class="form-control" type="text"></div>
+                        <div class="form-group"><label><strong>Last Name:</strong></label><input class="form-control" type="text"></div>
+                        <div class="form-group"><label><strong>Phone Number:</strong></label><input class="form-control" type="tel"></div>
+                        <div class="form-group"><label><strong>Email:</strong></label><input class="form-control" type="email"></div>
+                        <div class="form-group"><label><strong>Password:</strong></label><input class="form-control" type="password"></div>
+                        <div class="form-group"><label><strong>Repeat Password:</strong></label><input class="form-control" type="password"></div>
+                        <div class="form-group"><button class="btn btn-primary btn-block" type="submit">&nbsp;Create Account</button></div>
+                        <hr style="background: #c934b9;">
+                        <p style="color: var(--gray);">Already have an account?&nbsp;<span id="loginCursor" style="color: var(--blue);" data-dismiss="modal" data-toggle="modal" data-target="#log-in"><span style="text-decoration: underline;">Log In</span><br></span></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.js"></script>
+    <script src="assets/js/script.min.js?h=87a98683d2d7c1551b198849b82b3c25"></script>
+</body>
+
+</html>
